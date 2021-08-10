@@ -7,7 +7,7 @@ body {
 }
 
 a {
-  color: #e7f8f6;
+  color: #E6E6E5;
 }
 
 a:hover {
@@ -541,6 +541,23 @@ a:hover {
 --------------------------------------------------------------*/
 #clients .projects-wrapper img{
   width: 15%;
+}
+#products .product-img{
+  background: url("../img/home/mobile.png") ;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-size:78%
+}
+#contact{
+  width: 100%;
+  height: 100vh;
+  background: url("../img/home/contact-bg.png") top right;
+  background-size: cover;
+}
+#contact .text-label{
+  color: #E6d1d8;
+  margin-bottom: 1px;
 }
 /*--------------------------------------------------------------
 # Sections General
