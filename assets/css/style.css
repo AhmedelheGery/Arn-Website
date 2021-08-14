@@ -102,7 +102,79 @@ a:hover {
   background: url("../img/home/white-ping-bg.png") top right;
   background-size: cover;
 }
+.hero-half {
+  width: 100%;
+  height: 50vh;
+  background: url("../img/about/hero-bg.png") top right;
+  background-size: cover;
+  position: relative;
+}
+.hero-half .hero-title{
+  font-size: 50px;
+}
+.php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+/* bootstrap customize  */
+.form-control{
+  color: #341252;
+  background-color: transparent;
+}
+.bootstrap-select .btn{
+  padding: .375rem .75rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #341252;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-control:focus,.bootstrap-select .btn:focus {
+  color: #E7407B;
+  font-weight: 400;
+  background-color: transparent;
+  border-color: #E7407B;
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem #e7407b;
+}
+.input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:    #341252;
+  font-size: 0.8rem;
+}
+.form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color:    #341252;
+ font-size: 0.8rem;
+ opacity:  1;
+}
+.form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color:    #341252;
+ font-size: 0.8rem;
+ opacity:  1;
+}
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color:    #341252;
+ font-size: 0.8rem;
+}
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+ color:    #341252;
+ font-size: 0.8rem;
+}
+.form-control::placeholder { /* Most modern browsers support this now. */
+ color:    #341252;
+ font-size: 0.8rem;
+}
+.custom-control-input:checked~.custom-control-label::before{
+  border-color: #E7407B;
+background-color: #E7407B;
 
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -547,23 +619,19 @@ a:hover {
 }
 /*--------------------------------------------------------------
 # About Page
---------------------------------------------------------------*/
+---------------------------------------------------------*/
 #hero-about {
   width: 100%;
   height: 100vh;
   background: url("../img/about/hero-bg.png") top right;
   background-size: cover;
 }
-
 #hero-about h2 {
   margin-top: 160px;
 }
-
 .about-info .people-img{
   background: url("../img/about/people.png") ;
-  /* background-position: center; */
   background-repeat: no-repeat;
-  /* width: 100vw; */
   background-size: 100% 100%;
 }
 .about-info .mission{
@@ -573,6 +641,32 @@ a:hover {
 .about-info .vission{
   background-color: #FCE5E9;
 }
+/*--------------------------------------------------------------
+# Qoute Page
+---------------------------------------------------------*/
+.qoute-wrapper{
+  background-color: #FDF5F7;
+}
+.qoute-form{
+  width: 40%;
+  margin: 0 auto;
+}
+.qoute-form .qoute-label{
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #341252;
+}
+.qoute-label-lg{
+  font-size: 1rem;
+  font-weight: 700;
+  color: #341252;
+}
+.custom-control-label{
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
@@ -1372,4 +1466,177 @@ section {
   color: #e7f8f6;
   font-size: 14px;
   text-align: center;
+}
+
+/* NOT a Robot Start */
+.captcha-wrapper{
+  width: 65%;
+}
+.captcha {
+	background-color:#f9f9f9;
+	border:2px solid #d3d3d3;
+	border-radius:5px;
+	color:#4c4a4b;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+
+@media screen and (max-width: 500px) {
+	.captcha {
+		flex-direction:column;
+	}
+	.text {
+		margin:.5em!important;
+		text-align:center;
+	}
+	.logo {
+		align-self: center!important;
+	}
+	.spinner {
+		margin:2em .5em .5em .5em!important;
+	}
+}
+
+.text {
+	font-size:1em;
+	font-weight:normal;
+	margin-right:7em;
+}
+.spinner {
+	position:relative;
+	width:1.1em;
+	height:1.1em;
+	display:flex;
+	margin:2em 1em;
+	align-items:center;
+	justify-content:center;
+}
+input[type="checkbox"] { position: absolute; opacity: 0; z-index: -1; }
+input[type="checkbox"]+.checkmark {
+	display:inline-block;
+	width:1.2em;
+	height:1.2em;
+  margin-top: 0.5em;
+	background-color:#fcfcfc;
+	border:2.5px solid #c3c3c3;
+	border-radius:3px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	cursor: pointer;
+}
+input[type="checkbox"]+.checkmark span {
+	content:'';
+	position:relative;
+	margin-top:-3px;
+	transform:rotate(45deg);
+	width:.75em;
+	height:1.2em;
+	opacity:0;
+}
+input[type="checkbox"]+.checkmark>span:after {
+	content:'';
+	position:absolute;
+	display:block;
+	height:3px;
+	bottom:0;left:0;
+	background-color:#029f56;
+}
+input[type="checkbox"]+.checkmark>span:before {
+	content:'';
+	position:absolute;
+	display:block;
+	width:3px;
+	bottom:0;right:0;
+	background-color:#029f56;
+}
+input[type="checkbox"]:checked+.checkmark { 
+	animation:2s spin forwards;
+}
+input[type="checkbox"]:checked+.checkmark>span { 
+	animation:1s fadein 1.9s forwards;
+}
+input[type="checkbox"]:checked+.checkmark>span:after {animation:.3s bottomslide 2s forwards;}
+input[type="checkbox"]:checked+.checkmark>span:before {animation:.5s rightslide 2.2s forwards;}
+@keyframes fadein {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+@keyframes bottomslide {
+	0% {width:0;}
+	100% {width:100%;}
+}
+@keyframes rightslide {
+	0% {height:0;}
+	100% {height:100%;}
+}
+.logo {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	height:100%;
+	margin:0 0.5em;
+}
+.logo img {
+	height:1.3em;
+	width:1.3em;
+}
+.logo p {
+	color:#9d9ba7;
+	margin:0;
+	font-size:0.5em;
+	font-weight:700;
+	margin:.4em 0 .2em 0;
+}
+.logo small {
+	color:#9d9ba7;
+	margin:0;
+	font-size:.6em;
+}
+@keyframes spin {
+	10% {
+		width:0;
+		height:0;
+		border-width:6px;
+	}
+	30% {
+		width:0;
+		height:0;
+		border-radius:50%;
+		border-width:1em;
+		transform: rotate(0deg);
+		border-color:rgb(199,218,245);
+	}
+	50% {
+		width:2em;
+		height:2em;
+		border-radius:50%;
+		border-width:4px;
+		border-color:rgb(199,218,245);
+		border-right-color:rgb(89,152,239);
+	}
+	70% {
+		border-width:4px;
+		border-color:rgb(199,218,245);
+		border-right-color:rgb(89,152,239);
+	}
+	90% {
+		border-width:4px;
+	}
+	100% {
+		width:2em;
+		height:2em;
+		border-radius:50%;
+		transform: rotate(720deg);
+		border-color:transparent;
+	}
+}
+::selection {
+	background-color:transparent;
+	color:teal;
+}
+::-moz-selection {
+	background-color:transparent;
+	color:teal;
 }
