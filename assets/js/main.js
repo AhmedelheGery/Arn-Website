@@ -163,6 +163,17 @@
     items: 1
   });
 
+    // Portfolio details carousel
+    $(".products-carousel").owlCarousel({
+      center:true,
+      autoplay: true,
+      dots: true,
+      nav:true,
+      navText: ["<i class='bx bx-left-arrow carousel-arrow'></i>","<i class='bx bx-right-arrow carousel-arrow'></i>"],
+      loop: true,
+      items: 1
+    });
+
   // Init AOS
   function aos_init() {
     AOS.init({
