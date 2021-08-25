@@ -77,6 +77,10 @@ p{
   font-family: 'Neo Sans Arabic Medium';
 }
 
+li{
+  font-family: 'Neo Sans Arabic Regular';
+}
+
 a {
   color: #E6E6E5;
   font-family: 'Neo Sans Arabic Light';
@@ -100,6 +104,9 @@ a:hover {
 /*--------------------------------------------------------------
 # Shared Style
 --------------------------------------------------------------*/
+.w-20{
+  width: 20%;
+}
 .white-color{
   color: #fff;
 }
@@ -1829,9 +1836,24 @@ input[type="checkbox"]:checked+.checkmark>span:before {animation:.5s rightslide 
   width: 90%;
 }
 
-.products-wrapper p , li {
+.products-wrapper .info , li {
   line-height: 30px;
   font-weight: 500;
+}
+
+.products-wrapper .social-btns .btn{
+  color: #fff;
+}
+.products-wrapper .social-btns p{
+  font-family: 'Neo Sans Arabic Light';
+  font-size: 0.6rem;
+}
+.products-wrapper .social-btns .big-txt{
+  font-family: 'Neo Sans Arabic Regular';
+  font-size: 0.8rem;
+}
+.products-wrapper .social-btns i{
+  font-size: 1.2rem;
 }
 
 .carousel-arrow{
