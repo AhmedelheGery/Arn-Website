@@ -51,15 +51,33 @@
             ><img src="assets/img/logo.png" alt="brand" class="img-fluid"
           /></a>
           <nav class="nav-menu d-none d-lg-block">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li class="active"><a href="about.html">About us</a></li>
-              <li><a href="services.html">Our Services</a></li>
-              <li><a href="products.html">Our Products</a></li>
-              <li><a href="contact.html">Contact us</a></li>
-              <li><a href="#">العربية</a></li>
+            <ul class="switch-locale">
+              <li class="active">
+                <a data-i18n="home" href="index.html">Home</a>
+              </li>
+              <li><a data-i18n="about" href="about.html">About us</a></li>
               <li>
-                <a href="Qoute.html" class="btn secondary-btn px-4"
+                <a data-i18n="services" href="services.html">Our Services</a>
+              </li>
+              <li>
+                <a data-i18n="products" href="products.html">Our Products</a>
+              </li>
+              <li><a data-i18n="contact" href="contact.html">Contact us</a></li>
+              <li>
+                <a id="handleRTL" href="#" data-locale="ar" class="locale"
+                  >العربية</a
+                >
+              </li>
+              <li>
+                <a id="handleLTR" href="#" data-locale="en" class="locale"
+                  >En</a
+                >
+              </li>
+              <li>
+                <a
+                  data-i18n="qoute"
+                  class="btn secondary-btn px-4"
+                  href="Qoute.html"
                   >Get a Qoute</a
                 >
               </li>
@@ -70,13 +88,19 @@
       </header>
       <div class="container">
         <div
-          class="w-50 align-items-start d-flex flex-column hero-content"
+          class="
+            w-50
+            align-items-start
+            d-flex
+            flex-column
+            hero-content
+            redirect-right redirect-rtl
+          "
           data-aos="zoom-in"
           data-aos-delay="100"
         >
-          <h2>The complex, simple!</h2>
-          <h1 class="py-1 secondary-color">About us</h1>
-          <p class="w-75">
+          <h1 data-i18n="about" class="py-1 secondary-color">About us</h1>
+          <p data-i18n="home-about" class="w-75">
             We are a team of passionate people whose goal is to improve
             everyone's life. Our main aim is to develop in a constant manner and
             become a leading performer in this competitive global marketplace.
@@ -91,16 +115,18 @@
     </section>
     <!-- ======= About Section ======= -->
     <section class="about-info">
-      <div class="content container">
+      <div class="content container redirect-rtl redirect-right">
         <div class="who-we-are mb-5">
-          <p class="section-title secondary-color">Vision</p>
-          <p class="purple-color">
+          <p data-i18n="vision" class="section-title secondary-color">Vision</p>
+          <p data-i18n="vision-info" class="purple-color">
             Excellence and comprehensiveness in providing software services.
           </p>
         </div>
         <div class="mt-5">
-          <p class="section-title secondary-color">Mission</p>
-          <p class="purple-color">
+          <p data-i18n="mission" class="section-title secondary-color">
+            Mission
+          </p>
+          <p data-i18n="mission-info" class="purple-color">
             Providing various software services with extreme accuracy and
             sufficient experience that creates the unique experience for the
             customer
@@ -111,43 +137,47 @@
       <section class="d-flex pb-0">
         <div class="col-md-6 people-img px-0"></div>
         <div class="col-md-6 align-items-center px-0">
-          <div class="mission p-5">
-            <h4 class="secondary-color font-weight-bold">Our Values</h4>
+          <div class="mission p-5 redirect-rtl redirect-right">
+            <h4 data-i18n="values" class="secondary-color font-weight-bold">
+              Our Values
+            </h4>
             <ul class="purple-color">
-              <li>
+              <li data-i18n="values-li-1">
                 Creativity and innovation by translating ideas and transforming
                 them into reality implemented professionally and accurately.
               </li>
-              <li>
+              <li data-i18n="values-li-2">
                 Modernity keeping pace with global software development
                 technology, and leadership in providing services with the latest
                 and best methodologies.
               </li>
-              <li>
+              <li data-i18n="values-li-3">
                 Quality and accuracy in providing all software services with
                 exceptional advantages.
               </li>
-              <li>
+              <li data-i18n="values-li-4">
                 Achieving the greatest expansion for our customers by enabling
                 them to expand their capacity in providing services.
               </li>
             </ul>
           </div>
-          <div class="vission p-5">
-            <h4 class="secondary-color font-weight-bold">Our Goals</h4>
+          <div class="vission p-5 redirect-rtl redirect-right">
+            <h4 data-i18n="goals" class="secondary-color font-weight-bold">
+              Our Goals
+            </h4>
             <ul class="purple-color">
-              <li>
+              <li data-i18n="goals-li-1">
                 Achieving leadership in the field of software development in KSA
                 and the Gulf region.
               </li>
-              <li>
+              <li data-i18n="goals-li-2">
                 Providing integrated technical services and software solutions.
               </li>
-              <li>
+              <li data-i18n="goals-li-3">
                 Keeping abreast of the cutting edge technologies worldwide and
                 enabling customers to achieve.
               </li>
-              <li>
+              <li data-i18n="goals-li-4">
                 Create an optimal experience for the customer internally and for
                 the user externally.
               </li>
@@ -158,8 +188,8 @@
     </section>
     <!-- ======= Languages Section ======= -->
     <section id="clients" class="clients white-bg pt-0">
-      <div class="content container">
-        <p class="section-title purple-color w-75">
+      <div class="content container redirect-rtl redirect-right">
+        <p data-i18n="languages-title" class="section-title purple-color w-75">
           We speak any language you really need node, Angular, swift, php and
           more...
         </p>
@@ -186,15 +216,18 @@
     <footer id="footer">
       <div class="container d-flex justify-content-between">
         <div class="links">
-          <a href="#">Privacy Policy</a>
-          <a href="#" class="mx-5">Terms & Condition</a>
+          <a data-i18n="privacy-policy" href="#">Privacy Policy</a>
+          <a data-i18n="terms-condition" href="#" class="mx-5"
+            >Terms & Condition</a
+          >
         </div>
-        <div class="copyright">
+        <div data-i18n="copy-right" class="copyright">
           &copy; Copyright <strong><span>arn</span></strong
           >. All Rights Reserved
         </div>
       </div>
     </footer>
+    <!-- End  Footer -->
 
     <div id="preloader"></div>
     <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
@@ -210,7 +243,15 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/venobox/venobox.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
-
+    <!-- jquery i18  -->
+    <script src="i18n/CLDRPluralRuleParser.js"></script>
+    <script src="i18n/jquery.i18n.js"></script>
+    <script src="i18n/jquery.i18n.messagestore.js"></script>
+    <script src="i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="i18n/jquery.i18n.language.js"></script>
+    <script src="i18n/jquery.i18n.parser.js"></script>
+    <script src="i18n/jquery.i18n.emitter.js"></script>
+    <script src="i18n/jquery.i18n.emitter.bidi.js"></script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
   </body>

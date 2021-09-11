@@ -7,6 +7,29 @@
 !(function($) {
   "use strict";
 
+    // LOCALAZTION
+    $.i18n()
+    .load({
+      en: "i18n/languages/en.json",
+      ar: "i18n/languages/ar.json",
+    })
+    .done(function () {
+      $(".switch-locale").on("click", ".locale", function (e) {
+        e.preventDefault();
+        $.i18n().locale = $(this).data("locale");
+        $("body").i18n();
+      });
+    });
+
+    $("#handleRTL").click(function () {
+      $(".redirect-right").css("text-align", "right");
+      $(".redirect-rtl").css("direction", "rtl");
+    });
+    $("#handleLTR").click(function () {
+      $(".redirect-right").css("text-align", "left");
+      $(".redirect-rtl").css("direction", "ltr");
+    });
+
   // Preloader
   $(window).on('load', function() {
     if ($('#preloader').length) {
