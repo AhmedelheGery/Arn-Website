@@ -36,23 +36,47 @@
   <!-- ======= Hero Section ======= -->
   <section class="hero-half py-0">
     <header id="header">
-      <div class="
-            container-fluid
-            d-flex
-            justify-content-between
-            align-items-center
-          ">
-        <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="brand" class="img-fluid" /></a>
+      <div
+        class="
+          container-fluid
+          d-flex
+          justify-content-between
+          align-items-center
+        "
+      >
+        <a href="index.html" class="logo"
+          ><img src="assets/img/logo.png" alt="brand" class="img-fluid"
+        /></a>
         <nav class="nav-menu d-none d-lg-block">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="services.html">Our Services</a></li>
-            <li class="active"><a href="products.html">Our Products</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-            <li><a href="#">العربية</a></li>
+          <ul class="switch-locale">
+            <li class="active">
+              <a data-i18n="home" href="index.html">Home</a>
+            </li>
+            <li><a data-i18n="about" href="about.html">About us</a></li>
             <li>
-              <a class="btn secondary-btn px-4 text-light" href="Qoute.html">Get a Qoute</a>
+              <a data-i18n="services" href="services.html">Our Services</a>
+            </li>
+            <li>
+              <a data-i18n="products" href="products.html">Our Products</a>
+            </li>
+            <li><a data-i18n="contact" href="contact.html">Contact us</a></li>
+            <li>
+              <a id="handleRTL" href="#" data-locale="ar" class="locale"
+                >العربية</a
+              >
+            </li>
+            <li>
+              <a id="handleLTR" href="#" data-locale="en" class="locale"
+                >En</a
+              >
+            </li>
+            <li>
+              <a
+                data-i18n="qoute"
+                class="btn secondary-btn px-4"
+                href="Qoute.html"
+                >Get a Qoute</a
+              >
             </li>
           </ul>
         </nav>
@@ -60,10 +84,10 @@
       </div>
     </header>
     <div class="py-3" data-aos="zoom-in" data-aos-delay="100">
-      <h1 class="text-center mt-5 font-900 text-white hero-title">
+      <h1 data-i18n="products" class="text-center mt-5 font-900 text-white hero-title">
         Our Products
       </h1>
-      <h4 class="text-center my-1">
+      <h4 data-i18n="ready-for-change" class="text-center my-1">
         Ready for changing, our products will do this
       </h4>
     </div>
@@ -72,23 +96,23 @@
   <section>
     <div class="products-wrapper" data-aos="fade-up">
       <div class="container">
-        <!-- 1  -->
+        <!-- ezhalha  -->
         <div class="product row align-items-center mb-5">
           <div class="img-ezhalha col-6">
             <img src="./assets/img/products/1.png" alt="">
           </div>
-          <div class="info col-6">
-            <p class="section-title secondary-color">EZHALHA</p>
-            <p class="purple-color">
+          <div class="info col-6 redirect-right redirect-rtl">
+            <p data-i18n="Ezhalha" class="section-title secondary-color">EZHALHA</p>
+            <p data-i18n="Ezhalha-text" class="purple-color">
               Ezhalha, the number one and only super app in the Middle East
               that serves you and your car in one platform.
             <ul>
-              <li class="purple-color">Delivery services ( a variety of offers that reach faster than you would imagine)
+              <li data-i18n="Ezhalha-li-1" class="purple-color">Delivery services ( a variety of offers that reach faster than you would imagine)
               </li>
-              <li class="purple-color">Car care and maintenance (we serve you anytime, anywhere)</li>
-              <li class="purple-color">New comprehensive and updated market (with the first online auction in the
+              <li data-i18n="Ezhalha-li-2" class="purple-color">Car care and maintenance (we serve you anytime, anywhere)</li>
+              <li data-i18n="Ezhalha-li-3" class="purple-color">New comprehensive and updated market (with the first online auction in the
                 kingdom)</li>
-              <li class="purple-color">We move your furniture and serve all your needs</li>
+              <li data-i18n="Ezhalha-li-4" class="purple-color">We move your furniture and serve all your needs</li>
             </ul>
             </p>
             <div class="social-btns d-flex">
@@ -103,18 +127,22 @@
             </div>
           </div>
         </div>
-        <!-- 2  -->
+        <!-- nashri  -->
         <div class="product row align-items-center my-5">
-          <div class="info col-6">
-            <p class="section-title secondary-color">NASHRI</p>
-            <p class="purple-color">
+          <div class="info col-6 redirect-right redirect-rtl">
+            <p data-i18n="nashri" class="section-title secondary-color">NASHRI</p>
+            <p data-i18n="nashri-text" class="purple-color">
               Your trusted Arab destination for health and beauty products | Online
               Shopping | Free Shipping and Exchange | Payment on Delivery.
               Nashri Saudi online shop provides the largest selection of natural and
               synthetic wigs in the middle east and the Arab world.
               Nashry wigs are distinguished by their high quality natural origin, sourced
               from Brazil, stemming from the company's many years of experience in
-              manufacturing natural wigs
+              manufacturing natural wigs.
+              <ul>
+                <li data-i18n="nashri-li-1" class="purple-color">Integrated application for the sale of care and beauty products</li>
+                <li data-i18n="nashri-li-2" class="purple-color">Website serving thousands of customers</li>
+              </ul>
             </p>
             <div class="social-btns d-flex">
               <a href="https://apps.apple.com/us/app/%D9%86%D8%B4%D8%B1%D9%8A-%D9%84%D9%84%D8%AA%D8%B3%D9%88%D9%82-%D8%A7%D9%88%D9%86%D9%84%D8%A7%D9%8A%D9%86/id1370827846" target="_blank"  class="d-flex justify-content-between align-items-center btn light-purple-bg px-3">
@@ -131,46 +159,46 @@
             <img src="./assets/img/products/2.png" alt="img-nashri">
           </div>
         </div>
-        <!-- 3 Dox -->
+        <!-- dox -->
         <div class="product row align-items-center mb-5">
           <div class="col-6">
             <img src="./assets/img/products/1.png" alt="">
           </div>
-          <div class="info col-6">
-            <p class="section-title secondary-color">Dox</p>
-            <p class="purple-color">
+          <div class="info col-6 redirect-right redirect-rtl">
+            <p data-i18n="dox" class="section-title secondary-color">Dox</p>
+            <p data-i18n="dox-text" class="purple-color">
               Dox is the leading car maintenance company with the latest
               Technological devices and equipment, we take intelligent solutions to treat
               Shocks with precision and perfect work.
             <ul>
-              <li class="purple-color">Professional plumbing</li>
-              <li class="purple-color">High quality paint</li>
-              <li class="purple-color">Absorbing with high precision and skill</li>
-              <li class="purple-color">Mechanics with long experience</li>
+              <li data-i18n="dox-li-1" class="purple-color">Professional plumbing</li>
+              <li data-i18n="dox-li-2" class="purple-color">High quality paint</li>
+              <li data-i18n="dox-li-3" class="purple-color">Absorbing with high precision and skill</li>
+              <li data-i18n="dox-li-4" class="purple-color">Mechanics with long experience</li>
             </ul>
             </p>
             <div class="social-btns d-flex">
               <a href="https://dox.sa/en/index.html" target="_blank"  class="d-flex justify-content-between align-items-center btn light-purple-bg px-3 mx-3">
                 <i class="fas fa-globe-americas mr-2"></i>
-                <span class="mb-0">Visit Website</span>
+                <span data-i18n="visit-website" class="mb-0">Visit Website</span>
               </a>
             </div>
           </div>
         </div>
-        <!-- 4 Tamm -->
+        <!-- tamm -->
         <div class="product row align-items-center my-5">
-          <div class="info col-6">
-            <p class="section-title secondary-color">Tamm</p>
-            <p class="purple-color">
+          <div class="info col-6 redirect-right redirect-rtl">
+            <p data-i18n="tamm" class="section-title secondary-color">Tamm</p>
+            <p data-i18n="tamm-text " class="purple-color">
               Your first, easiest and most comprehensive destination, providing all the services and distinguished real
               estate opportunities you need in one platform.
               A unique real estate application that provides you with all real estate services :
             <ul>
-              <li class="purple-color">Real estate marketing</li>
-              <li class="purple-color">Notarization of contracts and agreements</li>
-              <li class="purple-color">Buying, selling and renting</li>
-              <li class="purple-color">Financing and investment</li>
-              <li class="purple-color">Real estate brokerage services</li>
+              <li data-i18n="tamm-li-1" class="purple-color">Real estate marketing</li>
+              <li data-i18n="tamm-li-2" class="purple-color">Notarization of contracts and agreements</li>
+              <li data-i18n="tamm-li-3" class="purple-color">Buying, selling and renting</li>
+              <li data-i18n="tamm-li-4" class="purple-color">Financing and investment</li>
+              <li data-i18n="tamm-li-5" class="purple-color">Real estate brokerage services</li>
             </ul>
             </p>
             <div class="social-btns d-flex">
@@ -188,40 +216,40 @@
             <img src="./assets/img/products/2.png" alt="img-nashri">
           </div>
         </div>
-        <!-- 5 Moather  -->
+        <!-- moather  -->
         <div class="product row align-items-center mb-5">
           <div class="col-6">
             <img src="./assets/img/products/1.png" alt="">
           </div>
-          <div class="info col-6">
-            <p class="section-title secondary-color">Moather</p>
-            <p class="purple-color">
+          <div class="info col-6 redirect-right redirect-rtl">
+            <p data-i18n="moather" class="section-title secondary-color">Moather</p>
+            <p data-i18n="moather-text" class="purple-color">
               Impact and the meaning it leaves behind, a company that provides various services related to influencers,
               and represents a link between the influencers and the various parties,
               For the easiest access, the most appropriate treatment and the best result
               The first media platform for influencers provides the following services:
             <ul>
-              <li class="purple-color">Finding and supporting influence</li>
-              <li class="purple-color">Facilitate access to the right influencer for your ad</li>
-              <li class="purple-color">Build and manage campaigns</li>
-              <li class="purple-color">Promote through influencers</li>
+              <li data-i18n="moather-li-1" class="purple-color">Finding and supporting influence</li>
+              <li data-i18n="moather-li-2" class="purple-color">Facilitate access to the right influencer for your ad</li>
+              <li data-i18n="moather-li-3" class="purple-color">Build and manage campaigns</li>
+              <li data-i18n="moather-li-4" class="purple-color">Promote through influencers</li>
             </ul>
             </p>
           </div>
         </div>
-        <!-- 6  -->
+        <!-- akam  -->
         <div class="product row align-items-center my-5">
-          <div class="info col-6">
-            <p class="section-title secondary-color">AKAM</p>
-            <p class="purple-color">
+          <div class="info col-6 redirect-right redirect-rtl">
+            <p data-i18n="akam" class="section-title secondary-color">AKAM</p>
+            <p data-i18n="akam-text" class="purple-color">
               Leadership in providing services in the fields of real estate, contracting and engineering, with
               professionalism, proficiency and comprehensiveness, A website that facilitates the following services:
             <ul>
-              <li class="purple-color">Construction management</li>
-              <li class="purple-color">Property and facilities management</li>
-              <li class="purple-color">Notarization of contracts and agreements</li>
-              <li class="purple-color">Real estate maintenance</li>
-              <li class="purple-color">Buying, selling and renting</li>
+              <li data-i18n="akam-li-1" class="purple-color">Construction management</li>
+              <li data-i18n="akam-li-2" class="purple-color">Property and facilities management</li>
+              <li data-i18n="akam-li-3" class="purple-color">Notarization of contracts and agreements</li>
+              <li data-i18n="akam-li-4" class="purple-color">Real estate maintenance</li>
+              <li data-i18n="akam-li-5 " class="purple-color">Buying, selling and renting</li>
             </ul>
             </p>
           </div>
@@ -232,18 +260,22 @@
       </div>
     </div>
   </section>
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container d-flex justify-content-between">
-      <div class="links">
-        <a href="#">Privacy Policy</a>
-        <a href="#" class="mx-5">Terms & Condition</a>
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container d-flex justify-content-between">
+        <div class="links">
+          <a data-i18n="privacy-policy" href="#">Privacy Policy</a>
+          <a data-i18n="terms-condition" href="#" class="mx-5"
+            >Terms & Condition</a
+          >
+        </div>
+        <div data-i18n="copy-right" class="copyright">
+          &copy; Copyright <strong><span>arn</span></strong
+          >. All Rights Reserved
+        </div>
       </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>arn</span></strong>. All Rights Reserved
-      </div>
-    </div>
-  </footer>
+    </footer>
+    <!-- End  Footer -->
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
