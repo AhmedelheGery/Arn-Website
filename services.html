@@ -55,15 +55,33 @@
             ><img src="assets/img/logo.png" alt="brand" class="img-fluid"
           /></a>
           <nav class="nav-menu d-none d-lg-block">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About us</a></li>
-              <li class="active"><a href="services.html">Our Services</a></li>
-              <li><a href="products.html">Our Products</a></li>
-              <li><a href="contact.html">Contact us</a></li>
-              <li><a href="#">العربية</a></li>
+            <ul class="switch-locale">
               <li>
-                <a class="btn secondary-btn px-4 text-light" href="Qoute.html"
+                <a data-i18n="home" href="index.html">Home</a>
+              </li>
+              <li><a data-i18n="about" href="about.html">About us</a></li>
+              <li class="active">
+                <a data-i18n="services" href="services.html">Our Services</a>
+              </li>
+              <li>
+                <a data-i18n="products" href="products.html">Our Products</a>
+              </li>
+              <li><a data-i18n="contact" href="contact.html">Contact us</a></li>
+              <li>
+                <a id="handleRTL" href="#" data-locale="ar" class="locale"
+                  >العربية</a
+                >
+              </li>
+              <li>
+                <a id="handleLTR" href="#" data-locale="en" class="locale"
+                  >En</a
+                >
+              </li>
+              <li>
+                <a
+                  data-i18n="qoute"
+                  class="btn secondary-btn px-4"
+                  href="Qoute.html"
                   >Get a Qoute</a
                 >
               </li>
@@ -73,10 +91,13 @@
         </div>
       </header>
       <div class="py-3" data-aos="zoom-in" data-aos-delay="100">
-        <h1 class="text-center mt-5 font-900 text-white hero-title">
+        <h1
+          data-i18n="services"
+          class="text-center mt-5 font-900 text-white hero-title"
+        >
           Our Services
         </h1>
-        <h4 class="text-center my-1">
+        <h4 data-i18n="services-subtitle" class="text-center my-1">
           Knowing the pain points on your product is the first step to build a
           success product
         </h4>
@@ -85,7 +106,16 @@
     <!-- ======= Services Section ======= -->
     <section>
       <div class="service-wrapper" data-aos="fade-up">
-        <p class="section-title service-title px-5 purple-color">
+        <p
+          data-i18n="we-focus"
+          class="
+            section-title
+            service-title
+            px-5
+            purple-color
+            redirect-right redirect-rtl
+          "
+        >
           We stay focused on your product
         </p>
         <div class="container">
@@ -99,11 +129,17 @@
               my-5
             "
           >
-            <div class="info-right w-50">
-              <p class="section-title secondary-color font-900">
+            <div class="info-right w-50 redirect-right">
+              <p
+                data-i18n="web-mobile"
+                class="section-title secondary-color font-900"
+              >
                 Web and Mobile Development
               </p>
-              <p class="purple-color font-weight-bold">
+              <p
+                data-i18n="web-mobile-info"
+                class="purple-color font-weight-bold"
+              >
                 In ARN, we help our customers to find solutions to fit their
                 unique business requirements and strategies. When developing
                 custom software solutions for our customers, we focus on their
@@ -115,11 +151,19 @@
           </div>
           <!-- erp  -->
           <div
-            class="service-box service-box-erp d-flex align-items-center my-5"
+            class="
+              service-box service-box-erp
+              d-flex
+              align-items-center
+              my-5
+              redirect-right
+            "
           >
             <div class="info-left w-50">
-              <p class="section-title secondary-color font-900">ERP Solution</p>
-              <p class="purple-color font-weight-bold">
+              <p data-i18n="erp" class="section-title secondary-color font-900">
+                ERP Solution
+              </p>
+              <p data-i18n="erp-info" class="purple-color font-weight-bold">
                 In this digitized era, ERP solutions is a complete suite of
                 business application which can manage various business fields
                 such as manufacturing, accounting, inventory, Ecommerce,
@@ -139,11 +183,20 @@
               justify-content-end
               align-items-center
               my-5
+              redirect-right
             "
           >
             <div class="info-right w-50">
-              <p class="section-title secondary-color font-900">E-Commerce</p>
-              <p class="purple-color font-weight-bold">
+              <p
+                data-i18n="e-commerce"
+                class="section-title secondary-color font-900"
+              >
+                E-Commerce
+              </p>
+              <p
+                data-i18n="e-commerce-info"
+                class="purple-color font-weight-bold"
+              >
                 With increasing demand for online purchasing, more and more
                 businesses are moving to e-commerce which is expanding
                 tremendously because of its complete range of benefits that any
@@ -158,11 +211,17 @@
               d-flex
               align-items-center
               my-5
+              redirect-right
             "
           >
             <div class="info-left w-50">
-              <p class="section-title secondary-color font-900">UI/UX Design</p>
-              <p class="purple-color font-weight-bold">
+              <p
+                data-i18n="ui-ux"
+                class="section-title secondary-color font-900"
+              >
+                UI/UX Design
+              </p>
+              <p data-i18n="ui-ux-info" class="purple-color font-weight-bold">
                 The best way to resonate with viewers and ensure on-site
                 engagement is through a stand-out user experience (UX)
                 complimented with a strong user interface (UI). UX and UI must
@@ -181,15 +240,18 @@
     <footer id="footer">
       <div class="container d-flex justify-content-between">
         <div class="links">
-          <a href="#">Privacy Policy</a>
-          <a href="#" class="mx-5">Terms & Condition</a>
+          <a data-i18n="privacy-policy" href="#">Privacy Policy</a>
+          <a data-i18n="terms-condition" href="#" class="mx-5"
+            >Terms & Condition</a
+          >
         </div>
-        <div class="copyright">
+        <div data-i18n="copy-right" class="copyright">
           &copy; Copyright <strong><span>arn</span></strong
           >. All Rights Reserved
         </div>
       </div>
     </footer>
+    <!-- End  Footer -->
 
     <div id="preloader"></div>
     <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
@@ -206,7 +268,15 @@
     <script src="assets/vendor/venobox/venobox.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
-
+    <!-- jquery i18  -->
+    <script src="i18n/CLDRPluralRuleParser.js"></script>
+    <script src="i18n/jquery.i18n.js"></script>
+    <script src="i18n/jquery.i18n.messagestore.js"></script>
+    <script src="i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="i18n/jquery.i18n.language.js"></script>
+    <script src="i18n/jquery.i18n.parser.js"></script>
+    <script src="i18n/jquery.i18n.emitter.js"></script>
+    <script src="i18n/jquery.i18n.emitter.bidi.js"></script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
   </body>
