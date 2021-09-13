@@ -24,6 +24,14 @@
     $("#handleRTL").click(function () {
       $(".redirect-right").css("text-align", "right");
       $(".redirect-rtl").css("direction", "rtl");
+      // handle form rtl
+      $('input[name="name"]').attr("placeholder", "الاسم");
+      $('textarea[name="message"]').attr("placeholder", "الرسالة");
+      $('textarea[name="descripe_project"]').attr("placeholder", "وصف المشروع");
+      $('textarea[name="reference-website"]').attr("placeholder", "الموقع المرجعي");
+      $('input[name="email"]').attr("placeholder", "الايميل");
+      $('input[name="company_name"]').attr("placeholder", "اسم الشركة");
+      $('input[name="phone_number"]').attr("placeholder", "رقم الهاتف");
     });
     $("#handleLTR").click(function () {
       $(".redirect-right").css("text-align", "left");
